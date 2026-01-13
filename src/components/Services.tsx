@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Truck, Package, MapPin, ArrowRight } from "lucide-react";
+import ContactAction from "./ContactAction";
 import trucksImage from "@/assets/trucks-fleet.jpg";
 import materialsImage from "@/assets/materials.jpg";
 import landImage from "@/assets/land.jpg";
@@ -85,10 +86,15 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="w-full group/btn">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+                <ContactAction>
+                    <Button variant="outline" className="w-full group/btn">
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                </ContactAction>
+
+             
+
               </CardContent>
             </Card>
           ))}

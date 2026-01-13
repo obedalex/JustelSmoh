@@ -17,7 +17,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-secondary/80" />
+        <div className="absolute inset-0 bg-secondary/20" />
       </div>
 
       {/* Content */}

@@ -36,6 +36,63 @@ const features = [
 const Features = () => {
   return (
     <section id="about" className="py-20 bg-muted">
+
+<div className="container mx-auto px-4 mb-24">
+  {/* Section Header */}
+  <div className="text-center mb-12">
+    <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+      Who We Are
+    </span>
+    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+      A Trusted Logistics & Land Brokerage Company
+    </h2>
+    <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+      Justelsmoh Company Limited is a Ghana-based company delivering reliable logistics
+      solutions and secure land brokerage services with integrity and professionalism.
+    </p>
+  </div>
+
+  {/* About Content */}
+  <div className="max-w-4xl mx-auto text-muted-foreground text-lg leading-relaxed space-y-6">
+    <p>
+      Justelsmoh Company Limited specializes in the haulage and conveyance of raw
+      materials such as clay, sand, clinker, and other related materials. Operating
+      a fleet of 25-cubic-meter tipper trucks, we primarily serve Tema and its
+      surrounding environs with efficiency and reliability.
+    </p>
+
+    <p>
+      Beyond transportation, we are committed to delivering seamless and dependable
+      logistics services guided by integrity, timeliness, and operational excellence.
+      Productivity remains a core hallmark of our operations, ensuring optimal value
+      and consistent service delivery for our clients.
+    </p>
+
+    <p>
+      In addition to logistics services, Justelsmoh Company Limited is actively engaged
+      in land brokerage. We specialize in the sale and acquisition of well-documented,
+      litigation-free lands within Accra, providing secure and transparent property
+      transactions for our clients.
+    </p>
+
+    <p className="font-medium text-foreground">
+      Our Vision is to become one of the leading logistics firms in Ghana and expand
+      our operations across other African countries.
+    </p>
+
+    <p className="font-medium text-foreground">
+      Our Mission is centered on:
+    </p>
+
+    <ul className="list-disc list-inside space-y-2">
+      <li>Executing all works with diligence and efficiency</li>
+      <li>Offering only litigation-free lands</li>
+      <li>Providing professional and responsive client service</li>
+    </ul>
+  </div>
+</div>
+
+
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
