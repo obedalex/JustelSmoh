@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Truck, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import logo from "../assets/logo.jpg"
 import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
@@ -38,10 +39,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-2">
-            <div className="bg-primary p-2 rounded-lg">
-              <Truck className="h-6 w-6 text-primary-foreground" />
+            <div className="p-2 rounded-lg">
+              <img src={logo} alt="Company Logo" className="h-20 w-20  object-cover" />
             </div>
-            <span className="text-xl font-bold text-foreground">Justelsmoh</span>
+            <span className="text-xl font-bold text-foreground">JUSTELSMOH</span>
           </a>
 
           <div className="hidden md:flex items-center gap-8">

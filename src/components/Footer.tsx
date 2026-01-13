@@ -1,5 +1,6 @@
 import { Truck, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import ContactAction from "./ContactAction"
+import logo from "@/assets/logo.jpg"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,12 +10,10 @@ const Footer = () => {
       { name: "Truck Leasing", href: "#services" },
       { name: "Construction Materials", href: "#services" },
       { name: "Land for Sale", href: "#services" },
-      { name: "Delivery Services", href: "#" },
     ],
     company: [{ name: "About Us", href: "#about" }],
     support: [
       { name: "Contact Us", href: "#contact" },
-      { name: "FAQs", href: "#" },
       { name: "Terms of Service", href: "#" },
       { name: "Privacy Policy", href: "#" },
     ],
@@ -33,8 +32,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <a href="#home" className="flex items-center gap-2 mb-4">
-              <div className="bg-primary p-2 rounded-lg">
-                <Truck className="h-6 w-6 text-primary-foreground" />
+              <div className=" p-2 rounded-lg">
+                <img src={logo} alt="logo" className="h-16 w-16" />
               </div>
               <span className="text-xl font-bold">Justelsmoh</span>
             </a>

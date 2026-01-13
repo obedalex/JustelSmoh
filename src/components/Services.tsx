@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Truck, Package, MapPin, ArrowRight } from "lucide-react";
 import ContactAction from "./ContactAction";
 import trucksImage from "@/assets/trucks-fleet.jpg";
-import materialsImage from "@/assets/materials.jpg";
+import materialsImage from "@/assets/Sand3.jpg";
 import landImage from "@/assets/land.jpg";
 
 const services = [
