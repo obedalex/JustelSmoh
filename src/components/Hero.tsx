@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
-
 import heroImage from "@/assets/truck3.png";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20"
+      className="relative min-h-screen flex items-center pt-20 px-4 sm:px-6 lg:px-8"
     >
       {/* Background Image */}
       <div
@@ -21,12 +20,12 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-      <div className="max-w-3xl">
+      <div className="container mx-auto relative z-10">
+        <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             Your One-Stop Solution for{" "}
             <span className="text-primary">Trucks</span>,{" "}
-            <span className="text-accent"> Construction Materials</span> &{" "}
+            <span className="text-accent">Construction Materials</span> &{" "}
             <span className="text-primary">Land</span>
           </h1>
 

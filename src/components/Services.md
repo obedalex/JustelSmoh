@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Truck, Package, MapPin, ArrowRight } from "lucide-react";
+import { Truck, Package, MapPin, ArrowRight, CheckCircle } from "lucide-react";
 import ContactAction from "./ContactAction";
 import trucksImage from "@/assets/trucks-fleet.jpg";
 import materialsImage from "@/assets/Sand3.jpg";
@@ -19,6 +19,8 @@ const services = [
       "24/7 roadside assistance",
       "GPS tracking included",
     ],
+    cta: "Check Truck Availability",
+    trust: "Trusted by contractors & logistics firms",
   },
   {
     icon: Package,
@@ -32,6 +34,8 @@ const services = [
       "Fast delivery",
       "Quality guaranteed",
     ],
+    cta: "Request Material Quote",
+    trust: "Reliable supply for small & large projects",
   },
   {
     icon: MapPin,
@@ -45,6 +49,8 @@ const services = [
       "Flexible payment plans",
       "Legal support included",
     ],
+    cta: "View Available Land",
+    trust: "Verified titles with legal support",
   },
 ];
 
@@ -71,8 +77,9 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300"
+              className="group overflow-hidden border-border hover:shadow-xl transition-all duration-300"
             >
+              {/* Media Area */}
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={service.image}
@@ -80,11 +87,12 @@ const Services = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
 
-                {/* ✅ FIXED OVERLAY */}
+                {/* Image overlay for contrast */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
 
+                {/* Service Icon */}
                 <div className="absolute bottom-4 left-4">
-                  <div className="bg-primary p-3 rounded-lg inline-block">
+                  <div className="bg-primary p-3 rounded-lg inline-flex items-center justify-center">
                     <service.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                 </div>
@@ -98,21 +106,28 @@ const Services = () => {
               </CardHeader>
 
               <CardContent>
-                <ul className="space-y-2 mb-6">
+                {/* Feature List */}
+                <ul className="space-y-2 mb-4">
                   {service.features.map((feature, i) => (
                     <li
                       key={i}
                       className="flex items-center gap-2 text-sm text-muted-foreground"
                     >
-                      <div className="h-1.5 w-1.5 bg-primary rounded-full" />
+                      <CheckCircle className="h-4 w-4 text-primary" />
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <ContactAction>
+                {/* Trust Signal */}
+                <p className="text-xs text-muted-foreground mb-6">
+                  {service.trust}
+                </p>
+
+                {/* Conversion-focused CTA */}
+                <ContactAction message="Contact us to get full details and pricing.">
                   <Button variant="outline" className="w-full group/btn">
-                    Learn More
+                    {service.cta}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
                 </ContactAction>

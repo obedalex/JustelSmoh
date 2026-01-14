@@ -4,7 +4,7 @@ const features = [
   {
     icon: Shield,
     title: "Trusted & Reliable",
-    description: "Over 18 years of experience serving satisfied customers across the region.",
+    description: "Over 3 years of experience serving satisfied customers across the region.",
   },
   {
     icon: Clock,
