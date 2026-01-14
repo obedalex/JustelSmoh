@@ -1,7 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Truck, Package, MapPin, ArrowRight, CheckCircle } from "lucide-react";
-import ContactAction from "./ContactAction";
+import { Truck, Package, MapPin, CheckCircle } from "lucide-react";
 import trucksImage from "@/assets/trucks-fleet.jpg";
 import materialsImage from "@/assets/Sand3.jpg";
 import landImage from "@/assets/land.jpg";
@@ -19,7 +17,6 @@ const services = [
       "24/7 roadside assistance",
       "GPS tracking included",
     ],
-    cta: "Check Truck Availability",
     trust: "Trusted by contractors & logistics firms",
   },
   {
@@ -34,7 +31,6 @@ const services = [
       "Fast delivery",
       "Quality guaranteed",
     ],
-    cta: "Request Material Quote",
     trust: "Reliable supply for small & large projects",
   },
   {
@@ -49,7 +45,6 @@ const services = [
       "Flexible payment plans",
       "Legal support included",
     ],
-    cta: "View Available Land",
     trust: "Verified titles with legal support",
   },
 ];
@@ -123,14 +118,6 @@ const Services = () => {
                 <p className="text-xs text-muted-foreground mb-6">
                   {service.trust}
                 </p>
-
-                {/* Conversion-focused CTA */}
-                <ContactAction message="Contact us to get full details and pricing.">
-                  <Button variant="outline" className="w-full group/btn">
-                    {service.cta}
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
-                </ContactAction>
               </CardContent>
             </Card>
           ))}
