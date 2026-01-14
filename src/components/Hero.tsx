@@ -8,16 +8,16 @@ const Hero = () => {
       className="relative min-h-screen flex items-center pt-20 px-4 sm:px-6 lg:px-8"
     >
       {/* Background Image */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+    <div
+      className="absolute inset-0 z-0 h-64 sm:h-80 md:h-96 lg:min-h-screen"
+      style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-black/40" />
+    </div>
 
       {/* Content */}
       <div className="container mx-auto relative z-10">
