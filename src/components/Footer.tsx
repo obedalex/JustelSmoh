@@ -38,8 +38,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Justelsmoh</span>
             </a>
             <p className="text-secondary-foreground/70 mb-6">
-              Your trusted partner for truck leasing, construction materials, and
-              prime land.
+              Your trusted partner for truck leasing, construction materials.
             </p>
 
             <div className="flex gap-4">

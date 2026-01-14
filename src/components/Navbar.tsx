@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-2">
             <div className="p-2 rounded-lg">
-              <img src={logo} alt="Company Logo" className="h-20 w-20  object-cover" />
+              <img src={logo} alt="Company Logo" className="h-16 w-16  object-cover" />
             </div>
             <span className="text-xl font-bold text-foreground">JUSTELSMOH</span>
           </a>
@@ -59,10 +59,6 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-foreground">
-              <Phone className="h-4 w-4 text-primary" />
-              <span className="font-semibold">+1 234 567 890</span>
-            </a>
             <ThemeToggle />
             <Button>Contact Us</Button>
           </div>

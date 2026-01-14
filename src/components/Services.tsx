@@ -13,7 +13,12 @@ const services = [
     description:
       "Flexible truck leasing options for all your transportation needs. From light-duty pickups to heavy-duty haulers, we have the perfect vehicle for your project.",
     image: trucksImage,
-    features: ["Daily, weekly, or monthly rentals", "Well-maintained fleet", "24/7 roadside assistance", "GPS tracking included"],
+    features: [
+      "Daily, weekly, or monthly rentals",
+      "Well-maintained fleet",
+      "24/7 roadside assistance",
+      "GPS tracking included",
+    ],
   },
   {
     icon: Package,
@@ -21,7 +26,12 @@ const services = [
     description:
       "High-quality construction materials at competitive prices. We supply cement, sand, gravel, steel, bricks, and more for projects of any scale.",
     image: materialsImage,
-    features: ["Bulk ordering available", "Competitive pricing", "Fast delivery", "Quality guaranteed"],
+    features: [
+      "Bulk ordering available",
+      "Competitive pricing",
+      "Fast delivery",
+      "Quality guaranteed",
+    ],
   },
   {
     icon: MapPin,
@@ -29,7 +39,12 @@ const services = [
     description:
       "Prime land plots in strategic locations. Whether you're looking for residential, commercial, or agricultural land, we have options that meet your needs.",
     image: landImage,
-    features: ["Clear titles", "Prime locations", "Flexible payment plans", "Legal support included"],
+    features: [
+      "Clear titles",
+      "Prime locations",
+      "Flexible payment plans",
+      "Legal support included",
+    ],
   },
 ];
 
@@ -64,37 +79,43 @@ const Services = () => {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" />
+
+                {/* ✅ FIXED OVERLAY */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+
                 <div className="absolute bottom-4 left-4">
                   <div className="bg-primary p-3 rounded-lg inline-block">
                     <service.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                 </div>
               </div>
+
               <CardHeader>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   {service.description}
                 </CardDescription>
               </CardHeader>
+
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <li
+                      key={i}
+                      className="flex items-center gap-2 text-sm text-muted-foreground"
+                    >
                       <div className="h-1.5 w-1.5 bg-primary rounded-full" />
                       {feature}
                     </li>
                   ))}
                 </ul>
+
                 <ContactAction>
-                    <Button variant="outline" className="w-full group/btn">
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
+                  <Button variant="outline" className="w-full group/btn">
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Button>
                 </ContactAction>
-
-             
-
               </CardContent>
             </Card>
           ))}

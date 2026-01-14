@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-import heroImage from "@/assets/hero-truck.jpg";
+import heroImage from "@/assets/truck3.png";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-secondary/20" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
@@ -26,7 +26,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             Your One-Stop Solution for{" "}
             <span className="text-primary">Trucks</span>,{" "}
-            <span className="text-accent">Materials</span> &{" "}
+            <span className="text-accent"> Construction Materials</span> &{" "}
             <span className="text-primary">Land</span>
           </h1>
 

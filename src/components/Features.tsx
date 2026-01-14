@@ -44,11 +44,11 @@ const Features = () => {
       Who We Are
     </span>
     <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-      A Trusted Logistics & Land Brokerage Company
+      A Trusted Logistics & Land Company
     </h2>
     <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
       Justelsmoh Company Limited is a Ghana-based company delivering reliable logistics
-      solutions and secure land brokerage services with integrity and professionalism.
+      solutions and secure land  services with integrity and professionalism.
     </p>
   </div>
 
