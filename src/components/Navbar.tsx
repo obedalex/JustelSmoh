@@ -71,7 +71,9 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
-            <Button>Contact Us</Button>
+             <Button asChild className="flex-1">
+                    <a href="mailto:obiney500@gmail.com">Contact us</a>
+               </Button>
           </div>
 
           <button
@@ -98,7 +100,9 @@ const Navbar = () => {
               ))}
               <div className="flex items-center gap-4 mt-2">
                 <ThemeToggle />
-                <Button className="flex-1">Get Quote</Button>
+               <Button asChild className="flex-1">
+                    <a href="mailto:info@company.com">Contact us</a>
+               </Button>
               </div>
             </div>
           </div>

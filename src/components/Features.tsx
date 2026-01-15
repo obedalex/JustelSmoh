@@ -47,8 +47,8 @@ const Features = () => {
       A Trusted Logistics & Land Company
     </h2>
     <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
-      Justelsmoh Company Limited is a Ghana-based company delivering reliable logistics
-      solutions and secure land  services with integrity and professionalism.
+      Justelsmoh Company Limited is a Ghanaian-based company delivering reliable logistics
+      solutions and secured land  services with integrity and professionalism.
     </p>
   </div>
 

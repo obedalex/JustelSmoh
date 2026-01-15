@@ -4,7 +4,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    content: "123 Industrial Avenue, Construction City, CC 12345",
+    content: "MXRV+GQ8 Tema  Near Heavy industrial Area",
   },
   {
     icon: Phone,

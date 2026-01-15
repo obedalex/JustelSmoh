@@ -59,19 +59,21 @@ const Hero = () => {
             land for sale. Building your success with reliability and trust.
           </p>
 
-          <Button
-            size="lg"
-            variant="outline"
-            className="
-              text-base sm:text-lg 
-              bg-primary-foreground/10 
-              border-primary-foreground/30 
-              text-primary-foreground 
-              hover:bg-primary-foreground/20
-            "
-          >
-            Contact Us
-          </Button>
+      <Button
+        asChild
+        size="lg"
+        variant="outline"
+        className="
+          text-base sm:text-lg 
+          bg-primary-foreground/10 
+          border-primary-foreground/30 
+          text-primary-foreground 
+          hover:bg-primary-foreground/20
+        "
+      >
+        <a href="mailto:obiney500@gmail.com">Contact Us</a>
+      </Button>
+
         </div>
       </div>
     </section>
