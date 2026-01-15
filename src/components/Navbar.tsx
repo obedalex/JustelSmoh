@@ -40,7 +40,18 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-2">
             <div className="p-2 rounded-lg">
-              <img src={logo} alt="Company Logo" className="h-16 w-16  object-cover" />
+                    <img
+                      src={logo}
+                      alt="Company Logo"
+                      className="
+                        h-10 
+                        sm:h-12 
+                        md:h-14 
+                        lg:h-16 
+                        w-auto 
+                        object-contain
+                      "
+                    />
             </div>
             <span className="text-xl font-bold text-foreground">JUSTELSMOH</span>
           </a>
