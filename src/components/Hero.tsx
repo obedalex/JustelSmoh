@@ -71,7 +71,7 @@ const Hero = () => {
           hover:bg-primary-foreground/20
         "
       >
-        <a href="mailto:obiney500@gmail.com">Contact Us</a>
+        <a href="mailto:amouzoufrederick@justelsmoh.com">Contact Us</a>
       </Button>
 
         </div>
