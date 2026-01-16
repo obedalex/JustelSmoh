@@ -1,23 +1,32 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/truck3.png";
+import heroImage from "@/assets/truck5.png";
+import heroImage2 from "@/assets/truck4.png"
+
 
 const Hero = () => {
   return (
     <section
       id="home"
       className="
-        relative 
-        flex items-center 
-        pt-16 
+        relative
+        flex items-center
+        pt-16
         px-4 sm:px-6 lg:px-8
-        min-h-[70vh] 
-        sm:min-h-[80vh] 
-        lg:min-h-screen
+
+        h-[50vh]        /* Mobile */
+        sm:h-[80vh]    /* Small tablets */
+        md:h-[90vh]    /* Tablets */
+        lg:h-screen    /* Desktop */
       "
     >
       {/* Background Image */}
       <div
-        className="absolute inset-0 z-0"
+        className="
+          absolute inset-0 z-0
+        
+          bg-center
+          bg-cover
+        "
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
@@ -29,51 +38,68 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto relative z-10">
-        <div className="max-w-3xl">
-          <h1 className="
-            text-3xl 
-            sm:text-4xl 
-            md:text-5xl 
-            lg:text-6xl 
-            font-bold 
-            text-primary-foreground 
-            mb-4 
-            leading-tight
-          ">
+      <div className="container mx-auto relative z-10 w-full">
+        <div className="
+          max-w-full
+          sm:max-w-2xl
+          md:max-w-3xl
+          lg:max-w-4xl
+        ">
+          <h1
+            className="
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              lg:text-5xl
+              xl:text-6xl
+              font-bold
+              text-primary-foreground
+              mb-4
+              md:mb-6
+              leading-tight
+              break-words
+            "
+          >
             Your One-Stop Solution for{" "}
             <span className="text-primary">Trucks</span>,{" "}
             <span className="text-accent">Construction Materials</span> &{" "}
             <span className="text-primary">Land</span>
           </h1>
 
-          <p className="
-            text-base 
-            sm:text-lg 
-            md:text-xl 
-            text-primary-foreground/80 
-            mb-6 
-            max-w-2xl
-          ">
+          <p
+            className="
+              text-sm
+              sm:text-base
+              md:text-lg
+              lg:text-xl
+              text-primary-foreground/80
+              mb-4
+              md:mb-6
+              max-w-full
+              sm:max-w-xl
+              md:max-w-2xl
+              break-words
+            "
+          >
             Premium truck leasing services, quality construction materials, and prime
             land for sale. Building your success with reliability and trust.
           </p>
 
-      <Button
-        asChild
-        size="lg"
-        variant="outline"
-        className="
-          text-base sm:text-lg 
-          bg-primary-foreground/10 
-          border-primary-foreground/30 
-          text-primary-foreground 
-          hover:bg-primary-foreground/20
-        "
-      >
-        <a href="mailto:justelsmoh@gmail.com">Contact Us</a>
-      </Button>
-
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="
+              text-sm sm:text-base md:text-lg
+              bg-primary-foreground/10
+              border-primary-foreground/30
+              text-primary-foreground
+              hover:bg-primary-foreground/20
+              w-full sm:w-auto
+            "
+          >
+            <a href="mailto:justelsmoh@gmail.com">Contact Us</a>
+          </Button>
         </div>
       </div>
     </section>
