@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
              <Button asChild className="flex-1">
-                    <a href="mailto:amouzoufrederick@justelsmoh.com">Contact us</a>
+                    <a href="mailto:justelsmoh@gmail.com">Contact us</a>
                </Button>
           </div>
 
@@ -101,7 +101,7 @@ const Navbar = () => {
               <div className="flex items-center gap-4 mt-2">
                 <ThemeToggle />
                <Button asChild className="flex-1">
-                    <a href="mailto:amouzoufrederick@justelsmoh.comcompany.com">Contact us</a>
+                    <a href="mailto:justelsmoh@gmail.comcompany.com">Contact us</a>
                </Button>
               </div>
             </div>

@@ -14,7 +14,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "amouzoufrederick@justelsmoh.com",
+    content: "justelsmoh@gmail.com",
   },
   {
     icon: Clock,
