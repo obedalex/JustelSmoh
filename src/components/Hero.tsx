@@ -98,7 +98,7 @@ const Hero = () => {
               w-full sm:w-auto
             "
           >
-            <a href="mailto:justelsmoh@gmail.com">Contact Us</a>
+            <a href="mailto:justelsmohltd@gmail.com">Contact Us</a>
           </Button>
         </div>
       </div>

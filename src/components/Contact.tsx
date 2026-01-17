@@ -9,12 +9,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    content: "+233 (0) 554 445 167 / +233 (0) 249 590 580",
+    content:
+      "+233(0) 595 365 081  / +233 (0) 554 445 167 / +233 (0) 249 590 580",
   },
   {
     icon: Mail,
     title: "Email",
-    content: "justelsmoh@gmail.com",
+    content: "justelsmohltd@gmail.com",
   },
   {
     icon: Clock,
@@ -62,7 +63,16 @@ const Contact = () => {
                 </h4>
 
                 <p className="text-muted-foreground text-sm md:text-base leading-relaxed break-words">
-                  {info.content}
+                  {info.title === "Phone"
+                    ? info.content.split("/").map((phone, i) => (
+                        <span
+                          key={i}
+                          className="block md:block lg:block"
+                        >
+                          {phone.trim()}
+                        </span>
+                      ))
+                    : info.content}
                 </p>
               </div>
             ))}
